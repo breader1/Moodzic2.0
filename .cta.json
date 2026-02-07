@@ -1,0 +1,25 @@
+{
+  "projectName": "moodzic2.0",
+  "mode": "file-router",
+  "typescript": true,
+  "packageManager": "npm",
+  "tailwind": true,
+  "addOnOptions": {
+    "drizzle": {
+      "database": "sqlite"
+    }
+  },
+  "git": true,
+  "version": 1,
+  "framework": "react-cra",
+  "chosenAddOns": [
+    "eslint",
+    "nitro",
+    "start",
+    "drizzle",
+    "shadcn",
+    "t3env",
+    "better-auth",
+    "tanstack-query"
+  ]
+}
