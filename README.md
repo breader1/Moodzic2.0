@@ -1,11 +1,11 @@
 # Moodzic2.0
 
-### [Link to "Jira" Board](https://www.notion.so/Web-App-Project-Planning-Moodzic-2e4f3162b8b5803b9c7ac48d52e676cd)
+## [Link to "Jira" Board](https://www.notion.so/Web-App-Project-Planning-Moodzic-2e4f3162b8b5803b9c7ac48d52e676cd)
 [![Super-Linter](https://github.com/breader1/Moodzic2.0/actions/workflows/super-linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/breader1/Moodzic2.0?style=flat&logo=coderabbit)
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/moodzic2-0)
 
-# Getting Started
+## Getting Started
 
 To run this application:
 
@@ -29,7 +29,7 @@ This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
 
 ## Linting & Formatting
 
-This project uses [eslint](https://eslint.org/) and [prettier](https://prettier.io/) for linting and formatting. Eslint is configured using [tanstack/eslint-config](https://tanstack.com/config/latest/docs/eslint). The following scripts are available:
+This project uses [ESLint](https://eslint.org/) and [prettier](https://prettier.io/) for linting and formatting. ESLint is configured using [tanstack/eslint-config](https://tanstack.com/config/latest/docs/eslint). The following scripts are available:
 
 ```bash
 npm run lint
@@ -310,10 +310,10 @@ Once we've created the derived store we can use it in the `App` component just l
 
 You can find out everything you need to know on how to use TanStack Store in the [TanStack Store documentation](https://tanstack.com/store/latest).
 
-# Demo files
+## Demo files
 
 Files prefixed with `demo` can be safely deleted. They are there to provide a starting point for you to play around with the features you've installed.
 
-# Learn More
+## Learn More
 
 You can learn more about all of the offerings from TanStack in the [TanStack documentation](https://tanstack.com).
