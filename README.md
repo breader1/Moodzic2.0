@@ -1,4 +1,7 @@
-Welcome to your new TanStack app! 
+### [Link to "Jira" Board](https://www.notion.so/Web-App-Project-Planning-Moodzic-2e4f3162b8b5803b9c7ac48d52e676cd)
+[![Super-Linter](https://github.com/breader1/Moodzic2.0/actions/workflows/super-linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/breader1/Moodzic2.0?style=flat&logo=coderabbit)
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/moodzic2-0)
 
 # Getting Started
 
@@ -7,14 +10,6 @@ To run this application:
 ```bash
 npm install
 npm run dev
-```
-
-# Building For Production
-
-To build this application for production:
-
-```bash
-npm run build
 ```
 
 ## Testing
@@ -32,7 +27,6 @@ This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
 
 ## Linting & Formatting
 
-
 This project uses [eslint](https://eslint.org/) and [prettier](https://prettier.io/) for linting and formatting. Eslint is configured using [tanstack/eslint-config](https://tanstack.com/config/latest/docs/eslint). The following scripts are available:
 
 ```bash
@@ -41,6 +35,7 @@ npm run format
 npm run check
 ```
 
+Super-linter workflow is used to verify linting is done on each PR.
 
 ## Shadcn
 
@@ -49,7 +44,6 @@ Add components using the latest version of [Shadcn](https://ui.shadcn.com/).
 ```bash
 pnpm dlx shadcn@latest add button
 ```
-
 
 ## T3Env
 
@@ -64,10 +58,6 @@ import { env } from "@/env";
 
 console.log(env.VITE_APP_TITLE);
 ```
-
-
-
-
 
 ## Setting up Better Auth
 
@@ -101,8 +91,6 @@ Then run migrations:
 ```bash
 npx @better-auth/cli migrate
 ```
-
-
 
 ## Routing
 This project uses [TanStack Router](https://tanstack.com/router). The initial setup is a file based router. Which means that the routes are managed as files in `src/routes`.
@@ -165,39 +153,6 @@ The `<TanStackRouterDevtools />` component is not required so you can remove it 
 
 More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
 
-
-## Data Fetching
-
-There are multiple ways to fetch data in your application. You can use TanStack Query to fetch data from a server. But you can also use the `loader` functionality built into TanStack Router to load the data for a route before it's rendered.
-
-For example:
-
-```tsx
-const peopleRoute = createRoute({
-  getParentRoute: () => rootRoute,
-  path: "/people",
-  loader: async () => {
-    const response = await fetch("https://swapi.dev/api/people");
-    return response.json() as Promise<{
-      results: {
-        name: string;
-      }[];
-    }>;
-  },
-  component: () => {
-    const data = peopleRoute.useLoaderData();
-    return (
-      <ul>
-        {data.results.map((person) => (
-          <li key={person.name}>{person.name}</li>
-        ))}
-      </ul>
-    );
-  },
-});
-```
-
-Loaders simplify your data fetching logic dramatically. Check out more information in the [Loader documentation](https://tanstack.com/router/latest/docs/framework/react/guide/data-loading#loader-parameters).
 
 ### React-Query
 
