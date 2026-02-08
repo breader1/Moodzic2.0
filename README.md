@@ -1,3 +1,5 @@
+# Moodzic2.0
+
 ### [Link to "Jira" Board](https://www.notion.so/Web-App-Project-Planning-Moodzic-2e4f3162b8b5803b9c7ac48d52e676cd)
 [![Super-Linter](https://github.com/breader1/Moodzic2.0/actions/workflows/super-linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/breader1/Moodzic2.0?style=flat&logo=coderabbit)
@@ -35,7 +37,7 @@ npm run format
 npm run check
 ```
 
-Super-linter workflow is used to verify linting is done on each PR.
+The Super-linter workflow verifies linting on each PR.
 
 ## Shadcn
 
